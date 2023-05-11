@@ -30,13 +30,13 @@
 			<a href="">
 				<img src="img/twitter.svg" alt="">
 			</a>
-			<a href="">
+			<a href="https://www.linkedin.com/company/cgrowthcapital/about/?viewAsMember=true" target="_blank">
 				<img src="img/linkedin.svg" alt="">
 			</a>
 			<!-- <a href="">
 				<img src="img/telegram.svg" alt="">
 			</a> -->
-			<a href="">
+			<a href="https://www.youtube.com/channel/UCNtlDhtxc6eJmlGlMj01eOw>
 				<img src="img/youtube.svg" alt="">
 			</a>
 		</div>
@@ -78,7 +78,9 @@
 		
 	
 	<div class="meu-list">
-
+		<a href="index.html" class="menu0 menu-link">
+			HOME
+		</a>
 		<a href="index.html#sport" class="menu1 menu-link">
 		SPORTS
 	</a>
@@ -97,16 +99,16 @@
 	</div>
 
 	<div class="mobile__social">
-		<a href="">
+		<a href="https://twitter.com/cgraotc">
 			<img src="img/twitter.svg" alt="">
 		</a>
-		<a href="">
+		<a href="https://www.linkedin.com/company/cgrowthcapital/about/?viewAsMember=true" target="_blank">
 			<img src="img/linkedin.svg" alt="">
 		</a>
-		<a href="">
+		<!-- <a href="">
 			<img src="img/telegram.svg" alt="">
-		</a>
-		<a href="">
+		</a> -->
+		<a href="https://www.youtube.com/channel/UCNtlDhtxc6eJmlGlMj01eOw">
 			<img src="img/youtube.svg" alt="">
 		</a>
 	</div>
@@ -228,6 +230,11 @@ POLICY
  
   },
    init: function (swiper) {
+	$(".menu0").click(function(){
+  setTimeout(function () {
+    swiper.slideTo(0);
+  }, 175);
+})
 $(".menu1, .down").click(function(){
   setTimeout(function () {
     swiper.slideTo(1);
