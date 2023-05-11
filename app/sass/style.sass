@@ -162,9 +162,12 @@ body
     transition: all 0.2s
 .swiper-pagination-bullet:nth-child(2):before 
     content: 'SPORT'
-.swiper-pagination-bullet:nth-child(2):before 
+.swiper-pagination-bullet:nth-child(3):before 
     content: 'MINING'
-    
+.swiper-pagination-bullet:nth-child(4):before 
+    content: 'TEAM' 
+.swiper-pagination-bullet:nth-child(5):before 
+    content: 'CONTACT' 
 .swiper-pagination-bullet:hover::before  
     opacity: 1   
 
@@ -205,7 +208,7 @@ body
     position: relative
 .menu-link:after 
     content: ''
-    width: 6vw
+    width: 5vw
     height: 0.069vw
     background: #fff
     position: absolute 
@@ -336,6 +339,14 @@ swiper-container
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+.swiper-slide:nth-child(4n) 
+    background-color: #000
+.team 
+    color: #000
+    .h2 
+        color: #fff
+    .team-list
+        padding-top: 1vw
 .mining__content 
     .sub-title 
         color: #fff
@@ -355,6 +366,199 @@ swiper-container
     color: #C2A430
 .mining__content 
     padding-top: 7vw
+.slide4.swiper-slide:nth-child(2n)
+    background: #000
+
+//start contact style 
+.slide4.swiper-slide
+    background: #000
+.contact-main-screen 
+    height: 64.236vw
+    background: url('../img/contact-bg.png')
+    background-size: 100vw
+    background-position: top 1vw center
+    padding-top: 27.014vw
+    .container-fluid 
+        display: flex 
+        justify-content: flex-end
+        width: 88vw
+        max-width: 88vw
+.contact-main-screen__title 
+    width: 35vw
+
+//start contact-content style 
+.contact-content
+    padding-top: 4vw
+    .container-fluid 
+        display: flex 
+        justify-content: space-between
+.contact-form 
+    width: 35vw
+.contact-info 
+    width: 19.792vw
+.input 
+    width: 100%
+    height: 3.333vw
+    background: #E4E7EB
+    border-radius: 0.139vw
+    border: none
+    outline: none
+    padding: 0 3.125vw
+    font-size: 1.389vw
+    font-family: $main-font
+    margin-bottom: 1.667vw
+.input::placeholder 
+    color: #A1A1A1
+.input:focus::placeholder 
+    color: transparent
+.input-name 
+    background-image: url('../img/user.svg')
+    background-repeat: no-repeat
+    background-position: left 1.146vw center
+    background-size: 1.389vw
+.input-email
+    background-image: url('../img/mail.svg')
+    background-repeat: no-repeat
+    background-position: left 1.146vw center
+    background-size: 1.389vw 
+.input-mobile
+    background-image: url('../img/mobile.svg')
+    background-repeat: no-repeat
+    background-position: left 1.146vw center
+    background-size: 1.1vw
+.textarea 
+    width: 100% 
+    height: 16vw
+    background: #E4E7EB
+    border: none
+    border-radius: 0.139vw
+    font-size: 1.389vw
+    padding: 0 1.111vw
+    padding-top: 1.042vw 
+    outline: none
+.textarea::placeholder 
+    color: #A1A1A1
+.contact-info
+    min-height: 100% 
+    display: flex
+    flex-direction: column 
+    justify-content: space-between 
+    width: 35vw
+.submit-button
+    width: 17.778vw 
+    height: 3.472vw
+    border: none
+    background: $orange
+    font-weight: 700 
+    text-transform: uppercase
+    font-size: 1.111vw
+    border-radius: 0.694vw
+    transition: all .3s
+    position: absolute 
+    bottom: 0 
+    right: 0
+    transform: translateX(130%)
+.contact-form 
+    position: relative
+.submit-button:hover 
+    background: rgba($orange, 0.6)
+    color: #fff
+.contact-info__item:first-child 
+    margin-bottom: 4.167vw
+.contact-info 
+    font-size: 1.389vw
+.mail-map-item 
+    display: flex 
+    align-items: center
+    align-items: center
+.mail-map-item:first-child
+    margin-bottom: 1.667vw
+.mail-map-icon-wrapper
+    min-width: 3.056vw
+    img 
+        height: 2vw
+.contact-page-social__item 
+    display: flex 
+    align-items: center
+    margin-bottom: 1.667vw
+.contact-page-social__icon-wrapper 
+    min-width: 3.056vw
+.mail-map-item 
+    color: #000 
+    text-decoration: none
+.mail-map-item:hover 
+    color: #fff 
+.contact-page-social__item
+    img 
+        height: 1.201vw
+        max-width: 1.458vw
+.contact-main-screen 
+    background-repeat: no-repeat
+.conact-content-wrapper
+    width: 75vw 
+    margin-left: auto 
+    margin-right: auto
+    display: flex 
+    justify-content: space-between
+    color: #fff
+.mail-map-item
+    color: #fff
+.contact-info__item:first-child 
+    margin-bottom: 3vw    
+.mobile-title
+    display: none
+
+//end contact-content style 
+//start team style 
+.team 
+    padding-top: 5vw
+    padding-bottom: 0
+    background-color: #000
+    .container-fluid 
+        width: 70vw
+        max-width: 80vw
+.team-list 
+    padding-top: 4.167vw
+.team-list 
+    display: flex 
+    justify-content: space-between
+.team__item 
+    width: 15vw
+    img 
+         
+        object-fit: cover 
+        object-position: center
+    p 
+        padding-top: 0.694vw
+        color: #fff
+.team__item-img-wrapper
+    height: 16.667vw  
+    overflow: hidden
+    border-radius: 0.694vw
+
+.team__item-img 
+    width: 160%
+    position: relative 
+    left: -1.8vw
+    top: -1.8vw
+
+    
+.team__item-name 
+    padding-top: 1.250vw
+    font-weight: 700 
+    color: $gold 
+    text-transform: uppercase
+.team__item-sub-title 
+    font-size: 1.111vw
+    color: #fff
+    margin-top: 0.139vw
+.team__item:nth-child(3),
+.team__item:nth-child(4)
+    .team__item-img 
+        left: -5.5vw
+.swiper-slide:nth-child(1n) 
+    background-color: #000
+//end team style 
 
 @import "media"
 
