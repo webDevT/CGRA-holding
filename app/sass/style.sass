@@ -92,6 +92,7 @@ body
     text-align: center
     padding-top: 1vw
     padding-bottom: 1vw
+    opacity: 0
 .footer.active
     position: fixed
     bottom: 0
@@ -100,6 +101,8 @@ body
     z-index: 99
     transform: translateY(0%)
     transition-delay: 1.5s
+    opacity: 1
+
 .footer__menu a
     font-size: 0.972vw
     color: #fff
@@ -206,6 +209,11 @@ body
     margin-bottom: 2.083vw
     width: 100%
     position: relative
+    display: block
+    color: #fff 
+    text-decoration: none
+.menu-link:hover 
+    color: #fff
 .menu-link:after 
     content: ''
     width: 5vw
@@ -559,7 +567,41 @@ swiper-container
 .swiper-slide:nth-child(1n) 
     background-color: #000
 //end team style 
-
+.footer--term 
+    position: static
+.terms 
+    color: #fff
+    padding-top: 11.944vw
+    p 
+        font-size: 18px
+    .container-fluid 
+        width: 1042px 
+        max-width: 86.933vw
+.terms-title 
+    font-size: 34px 
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 54px
+    span 
+        display: block
+        color: #A3A3A3
+.terms-sub-title
+    font-size: 20px 
+    font-weight: 700
+    margin-bottom: 25px
+    text-transform: uppercase
+.terms-sub-title-light 
+    font-size: 20px 
+    font-weight: 600
+    margin-bottom: 25px
+    text-transform: uppercase
+.terms 
+    margin-bottom: 25px
+.slide4,
+.slide1,
+.slide2,
+.slide3 
+    z-index: 100       
 @import "media"
 
 

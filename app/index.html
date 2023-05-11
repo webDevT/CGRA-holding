@@ -86,6 +86,10 @@
 		MINING
 	</div>
 
+	<div class="menu3 menu-link">
+		TEAM
+	</div>
+
 	<div class="menu4 menu-link">
 		CONTACT
 	</div>
@@ -114,7 +118,7 @@
 
 <div class="swiper-pagination">
 </div>
-	  <swiper-container init="false" class="mySwiper3">
+	  <swiper-container init="false" class="mySwiper3" id="home">
 		<swiper-slide class="slide1 swiper-slide">
 			<div class="slide-content">
 				<img src="img/vector.svg" alt="" class="vector">
@@ -132,7 +136,7 @@
 
 		</swiper-slide>
 
-		<swiper-slide class="slide2 swiper-slide">
+		<swiper-slide class="slide2 swiper-slide" id="sport">
 			<div class="sport">
 				<div class="sub-title">
 					<span class="bold">An innovation and growth orientated company</span>
@@ -148,7 +152,7 @@
 			</div>			
 		</swiper-slide>
 
-		<swiper-slide class="swiper-slide" >
+		<swiper-slide class="swiper-slide" id="mining">
 			<div class="mining__content">
 				<div class="sub-title">
 					<span class="bold">CGrowth Capital Mining invests in growth-oriented projects</span>
@@ -162,9 +166,9 @@
 			</div>
 		</swiper-slide>
 
-		<swiper-slide class="slide4 swiper-slide" >
+		<swiper-slide class="slide4 swiper-slide" id="team">
 				<!-- start team -->
-<section class="team">
+<section class="team" >
 	<div class="container-fluid">
 		<div class="team__content">
 			<h2 class="h2">
@@ -263,7 +267,7 @@
 
 		<swiper-slide class="slide5 swiper-slide" >
 			<!-- start contact content  -->
-<section class="contact-content">
+<section class="contact-content" id="contact">
 
 	<div class="conact-content-wrapper">
 		<div class="mobile-title">
@@ -371,7 +375,7 @@
 	  <footer class="footer">
 		<div class="container-fluid">
 		<div class="footer__menu">
-			<a href="">Privacy Policy <span>|</span> Terms of Use</a>
+			<a href="term.html">Privacy Policy <span>|</span> Terms of Use</a>
 
 			
 		</div>
@@ -436,7 +440,11 @@ $(".menu2").click(function(){
     swiper.slideTo(2);
   }, 175);
 })
-
+$(".menu3").click(function(){
+  setTimeout(function () {
+    swiper.slideTo(3);
+  }, 175);
+})
 $(".menu4").click(function(){
   setTimeout(function () {
     swiper.slideTo(4);
