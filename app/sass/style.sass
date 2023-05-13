@@ -588,7 +588,7 @@ swiper-container
     background-position: top center
     a,
     a:hover 
-        color: #000 
+        color: #ffff 
         text-decoration: underline
     p 
         font-size: 18px
@@ -635,17 +635,27 @@ swiper-container
         bottom: 0.5vw
 //start investors style
 .investors 
-    padding-top: 51.875vw
-    background: url('../img/investors-hero.png')
-    background-color: #000
-    background-size: 100vw
-    background-repeat: no-repeat
-    
-.investors-wrap
-    background: linear-gradient(180deg, #000000 0%, rgba(#545454, 0.838542) 116.93%, #0000 156.17%)
-    padding-bottom: 8.333vw
+    padding-top: 15vw 
+    .container-fluid 
+        width: 69.861vw 
+        max-width: 87.2vw
+    .h2 
+        color: #fff
+        font-weight: 700
+        font-size: 2.361vw
+        line-height: 1
+        span 
+            color: #bc9e30
+    .sub-title 
+        color: #d9d9d9 
+        text-align: left 
+        font-size: 1.667vw
+        font-weight: 700
+        width: 100%
+        max-width: 100%
+
 .investors-list 
-    padding-top: 8.333vw
+    padding-top: 6.333vw
     color: #fff
 .investors-list
     display: flex
@@ -674,7 +684,7 @@ swiper-container
     width: 1.599vw 
     height: 5.069vw
     border-radius: 10vw
-    background: #C55828
+    background: #bc9e30
     display: block 
     position: absolute 
     top: 50% 
@@ -684,7 +694,7 @@ swiper-container
     font-size: 1.667vw
     font-weight: 700
     span 
-        color: $orange
+        color: #bc9e30
 
 .investors-modal 
     position: fixed 
@@ -734,6 +744,37 @@ swiper-container
     text-decoration: none
 .investors-item:hover 
     color: #fff
+.footer--term  
+    padding-top: 2vw
+    padding-bottom: 3vw
+.top
+    position: fixed
+    right: 3vw
+    bottom: 3vw
+    width: 3vw
+    height: 3vw
+    display: none
+    justify-content: center
+    align-items: center
+    background: #202326
+    border-radius: 50%
+    text-decoration: none
+    z-index: 999
+    box-shadow: 0px 0px 5px rgba(#fff, 0.1)
+    svg 
+        width: 50%
+        transform: rotate(180deg)
+        fill: #fff
+    a
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+.top.active 
+    display: block !important
+
 @import "media"
 
 

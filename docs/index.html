@@ -13,10 +13,26 @@
 	
 	<body>
 
+		<div id="top"></div>
+	
+		<div class="top smooth">
+		  <a href="#top">
+		   
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+		  </a>
+		</div>
+			<div id="top"></div>
+		
+		<div class="top smooth">
+		  <a href="#top">
+		   
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+		  </a>
+		</div>
 	<!-- start top header -->
 <div class="top-header">
 	<div class="container-fluid">
-		CGROWTH CAPITAL trading on the OTC Market under ticker CGRA
+		CGrowth CAPITAL trading on the OTC Market under ticker CGRA
 		
 	</div>
 </div>	
@@ -91,6 +107,10 @@
 	<div class="menu3 menu-link">
 		TEAM
 	</div>
+
+	<a href="investors.html" class="menu4 menu-link">
+		INVESTORS
+	</a>
 
 	<div class="menu4 menu-link">
 		CONTACT
@@ -194,7 +214,7 @@
 						</div>		
 
 						<p class="light-grey">
-							A serial entrepreneur who has started grown and excited multiple companies. Nick is actively 
+							A serial entrepreneur who has started grown and  exited multiple companies. Nick is actively 
 involved in developing and acquiring disruptive technology companies and taking these 
 companies public in the USA. With a strong network in Europe, USA, Middle East and Africa Nick 
 is focused on creating and growing long term shareholder value.
@@ -426,6 +446,8 @@ extensive knowledge of the industry will help drive the growth of CGrowrh Capita
 			}
 		  },   on: {
   slideChange: function (swiper) {
+
+	$('.top').addClass('active');
     let activeIndex = swiper.realIndex
     
 
@@ -444,7 +466,7 @@ extensive knowledge of the industry will help drive the growth of CGrowrh Capita
  
   },
    init: function (swiper) {
-	$(".menu0").click(function(){
+	$(".menu0, .top").click(function(){
   setTimeout(function () {
     swiper.slideTo(0);
   }, 175);
