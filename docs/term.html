@@ -325,10 +325,19 @@ $(".menu4").click(function(){
 
 	  </script>
 
-  <script>
+
+<script>
+
+	$(window).scroll(function(){ if($(window).scrollTop()+$(window).height()>=$(document).height()){ 
+	
+		$('.footer').addClass('active');
+	 }  else {
+		$('.footer').removeClass('active');
+	 }
 	
 	
-  </script>
+	})
+	  </script>
 	<script src="js/main.js"></script>
 </body>
 </html>

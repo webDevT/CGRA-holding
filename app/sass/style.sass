@@ -88,7 +88,7 @@ body
     width: 100%
     z-index: 99
     transition: all .5s
-    transform: translateY(0%)
+    transform: translateY(100%)
     transition-delay: 0s
     color: #fff 
     text-align: center
@@ -96,12 +96,12 @@ body
     padding-bottom: 1vw
     opacity: 0
 .footer.active
-    position: static
+
     bottom: 0
     left: 0
     width: 100%
     z-index: 99
-    transform: translateY(-100%)
+    transform: translateY(0%)
     transition-delay: 1.5s
     opacity: 1
 
@@ -580,7 +580,7 @@ body
 //end team style 
 
 .footer.footer--term
-    position: static
+    position: fixed
     transition-delay: 0s
   
    
@@ -598,6 +598,7 @@ body
     background-size: 100vw 
     background-repeat: no-repeat 
     background-position: top center
+    padding-bottom: 20vw
     
     a,
     a:hover 
@@ -627,8 +628,7 @@ body
     font-weight: 600
     margin-bottom: 25px
     text-transform: uppercase
-.terms 
-    margin-bottom: 25px
+
 .slide4,
 .slide1,
 .slide2,
@@ -649,7 +649,8 @@ body
         bottom: 0.5vw
 //start investors style
 .investors 
-    padding-top: 15vw 
+    padding-top: 15vw
+    padding-bottom: 20vw 
     .container-fluid 
         width: 69.861vw 
         max-width: 87.2vw
