@@ -10,7 +10,10 @@
 
 
 	</head>
+	<style>
 	
+		
+	</style>
 	<body>
 
 		<div id="top"></div>
@@ -425,9 +428,8 @@ extensive knowledge of the industry will help drive the growth of CGrowrh Capita
 	
 		var swiper = document.querySelector(".mySwiper3");
 		Object.assign(swiper, {
-		  effect: "creative",
-		  speed: 900,
-
+		//effect: 'slide',
+		  speed: 1200,
 		  pagination: {
          el: '.swiper-pagination',
         clickable: true
@@ -436,15 +438,16 @@ extensive knowledge of the industry will help drive the growth of CGrowrh Capita
 	mousewheel: true,
   slidesPerView: 1,
 		
-		  creativeEffect: {
-			prev: {
-			  shadow: true,
-			  translate: [0, "-20%", -1],
-			},
-			next: {
-			  translate: [0,"100%", 0],
-			}
-		  },   on: {
+		//   creativeEffect: {
+		// 	prev: {
+		// 	  shadow: true,
+		// 	  translate: [0, "-20%", -1],
+		// 	},
+		// 	next: {
+		// 	  translate: [0,"100%", 0],
+		// 	}
+		//   }
+		     on: {
   slideChange: function (swiper) {
 
 	$('.top').addClass('active');
