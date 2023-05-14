@@ -214,94 +214,19 @@ LITHIUM PROJECT
 	  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
 	  crossorigin="anonymous"></script>
 	  
-	  <script>
 	
-	
-		var swiper = document.querySelector(".mySwiper3");
-		Object.assign(swiper, {
-		  effect: "creative",
-		  speed: 900,
-
-		  pagination: {
-         el: '.swiper-pagination',
-        clickable: true
-    },
-	direction: 'vertical',
-	mousewheel: true,
-  slidesPerView: 1,
-		
-		  creativeEffect: {
-			prev: {
-			  shadow: true,
-			  translate: [0, "-20%", -1],
-			},
-			next: {
-			  translate: [0,"100%", 0],
-			}
-		  },   on: {
-  slideChange: function (swiper) {
-    let activeIndex = swiper.realIndex
-    
-
-      if (activeIndex === 4) {
-		$('.footer').addClass('active');
-      } else {
-        $('.footer').removeClass('active');
-      }
- 
-  },
-   init: function (swiper) {
-	$(".menu0").click(function(){
-  setTimeout(function () {
-    swiper.slideTo(0);
-  }, 175);
-})
-$(".menu1, .down").click(function(){
-  setTimeout(function () {
-    swiper.slideTo(1);
-  }, 175);
-})
-$(".menu2").click(function(){
-  setTimeout(function () {
-    swiper.slideTo(2);
-  }, 175);
-})
-
-$(".menu3").click(function(){
-  setTimeout(function () {
-    swiper.slideTo(3);
-  }, 175);
-})
-
-$(".menu4").click(function(){
-  setTimeout(function () {
-    swiper.slideTo(4);
-  }, 175);
-})
-
-}, 
-
-
-
-	
-}	  
- 
-		  
-		});
-
-		
-		swiper.initialize({})
-	
-
-		
-	
-
-
-	  </script>
 
   <script>
-	
-	
+
+$(window).scroll(function(){ if($(window).scrollTop()+$(window).height()>=$(document).height()){ 
+
+	$('.footer').addClass('active');
+ }  else {
+	$('.footer').removeClass('active');
+ }
+
+
+})
   </script>
 	<script src="js/main.js"></script>
 </body>

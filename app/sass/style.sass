@@ -88,7 +88,7 @@ body
     width: 100%
     z-index: 99
     transition: all .5s
-    transform: translateY(100%)
+    transform: translateY(0%)
     transition-delay: 0s
     color: #fff 
     text-align: center
@@ -96,12 +96,12 @@ body
     padding-bottom: 1vw
     opacity: 0
 .footer.active
-    position: fixed
+    position: static
     bottom: 0
     left: 0
     width: 100%
     z-index: 99
-    transform: translateY(0%)
+    transform: translateY(-100%)
     transition-delay: 1.5s
     opacity: 1
 
@@ -578,9 +578,19 @@ body
 .swiper-slide:nth-child(1n) 
     background-color: #000
 //end team style 
-.footer--term 
+
+.footer.footer--term
     position: static
+    transition-delay: 0s
+  
+   
+.footer.footer--term.active  
+    transform: translateY(0)
+    transition-delay: 0s
+   
+
     opacity: 1
+
 .terms 
     color: #fff
     padding-top: 11.944vw
@@ -776,7 +786,7 @@ body
         text-decoration: none
 .top.active 
     display: block !important
-.swiper-slide
+
 
 
 
